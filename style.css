@@ -1,0 +1,390 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: Poppins;
+}
+
+.hero {
+  display: flex;
+}
+
+.blue {
+  background-color: rgb(49, 106, 230);
+  height: 100vh;
+  width: 50%;
+}
+
+.light {
+  background-color: aliceblue;
+  height: 100vh;
+  width: 50%;
+}
+
+.glass {
+  grid-column: 1/2;
+  position: absolute;
+  top: 5%;
+  left: 4%;
+  background: white;
+  width: 46%;
+  height: 90vh;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(5px);
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo h3 {
+  background: linear-gradient(to bottom, rgb(90, 128, 205), rgb(198, 76, 198));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 10px;
+  margin-left: -250px;
+}
+
+.circle-light {
+  width: 600px;
+  height: 850px;
+  border-radius: 50%;
+  background-color: rgba(231, 230, 230, 0.4);
+  display: grid;
+  place-content: center;
+}
+
+.circle1 {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: rgb(49, 106, 230);
+  display: grid;
+  place-content: center;
+}
+
+.statisticsContainer {
+  width: 500px;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1.7rem;
+  display: grid;
+  place-content: center;
+}
+
+.statistics {
+  width: 470px;
+  height: 280px;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-inline: 10px;
+}
+
+.bar {
+  display: grid;
+  place-content: center;
+}
+
+.bar-background {
+  height: 100px;
+  width: 150px;
+  background-image: url("Circular-Progress-Indicator-Component-For-React.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(50px);
+}
+
+button {
+  border: none;
+  width: 55px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px;
+  font-weight: bolder;
+  margin-left: 5px;
+  transform: translateY(-50px);
+}
+
+.super {
+  background-color: rgb(90, 128, 205, 0.3);
+  color: rgb(49, 106, 230);
+}
+
+.great {
+  background-color: rgba(128, 188, 128, 0.6);
+  color: rgb(57, 146, 57);
+}
+
+.purpose {
+  background-color: rgb(255, 192, 203, 0.5);
+  color: palevioletred;
+  padding-inline: 5px;
+  width: 65px;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 10px;
+}
+
+.headers p {
+  font-size: 12px;
+  background-color: rgb(49, 106, 230);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.statistics-bar {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 2fr;
+  grid-template-areas:
+    "br hr"
+    "br bg";
+  row-gap: 1rem;
+}
+
+.hours {
+  grid-area: hr;
+  width: 240px;
+  height: 100px;
+  box-shadow: 0 3px 4px lightgray;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.budget {
+  grid-area: bg;
+  width: 240px;
+  height: 100px;
+  box-shadow: 0 3px 4px lightgray;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.hours {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hours .content {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.25rem;
+  margin-left: 15px;
+}
+
+.hours h6,
+.budget h6 {
+  font-weight: 300;
+}
+
+.hours p,
+.budget .budgetp {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.hours img {
+  width: 40px;
+  height: 40px;
+  background-color: blueviolet;
+  fill: white;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 35px;
+}
+
+.budget {
+  display: flex;
+}
+
+.budget .content {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  margin-left: 15px;
+}
+
+.budget .budget-btn {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.25rem;
+}
+
+.budget img {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: palevioletred;
+}
+
+.budget-btn p:nth-child(1) {
+  width: 50px;
+  height: 27px;
+  border-radius: 5px;
+  display: grid;
+  place-content: center;
+}
+.budget-btn p:nth-child(2) {
+  font-size: 12px;
+}
+
+.glass .outside {
+  display: grid;
+  place-content: center;
+  margin-inline: 50px;
+  transform: translateY(-30px);
+  text-align: center;
+  font-weight: 500;
+}
+
+.rectangles {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  transform: translateY(-20px);
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 80px;
+  height: 5px;
+  background: lightgray;
+  border-radius: 5px;
+}
+
+.line1 {
+  background-color: rgb(49, 106, 230);
+}
+
+.form {
+  position: relative;
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  width: 46%;
+  height: 90vh;
+  grid-column: 2/3;
+  height: 90vh;
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.card {
+  background: rgba(240, 248, 255, 0.931);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 60%;
+  height: 85vh;
+  border-radius: 9px;
+}
+
+.card h2,
+p {
+  text-align: center;
+}
+
+.card h2 {
+  font-weight: 600;
+  transform: translateY(20px);
+}
+
+.card p {
+  transform: translateY(10px);
+  font-size: 12px;
+}
+
+.form-group {
+  margin: 10px auto;
+  padding-inline: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 12px;
+}
+
+.social-accounts {
+  display: flex;
+  gap: 1rem;
+  width: 20px;
+  transform: translate(120px, 10px);
+  margin-bottom: -5px;
+}
+
+.social-accounts .google,
+.social-accounts .facebook {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+input:not(.checkb) {
+  width: 230px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+input::placeholder {
+  font-size: 11px;
+}
+
+input[type="checkbox"] {
+  background: transparent;
+  border: 2px solid gray;
+  border-radius: none;
+}
+
+.checkb-text {
+  font-size: 12px;
+}
+
+.submit {
+  width: 250px;
+  height: 40px;
+  border: none;
+  background-color: rgb(49, 106, 230);
+  color: white;
+  margin-inline: auto;
+  transform: translate(-9px, 10px);
+}
+
+.other-accounts {
+  font-size: 12px;
+  margin: 0 25px 0 0;
+}
+
+.speechbubble {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+/* done */
