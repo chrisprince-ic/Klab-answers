@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.js" defer></script>
+
+    <style>
+      body {
+        font-family: "Poppins";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-group">
+      <p id="money">You have $0</p>
+      <label for="addmoney">Add money</label>
+      <input type="number" id="addmoney" />
+      <button id="addamount">Add Amount</button>
+    </div>
+
+    <ul id="ul"></ul>
+    <p id="total"></p>
+    <div class="form-group">
+      <label for="payment">Amount to Pay</label>
+      <input type="number" name="payment" id="payment" />
+    </div>
+    <button id="submitamount">Pay</button>
+
+    <p id="paid"></p>
+
+    <p id="errors"></p>
+  </body>
+</html>
